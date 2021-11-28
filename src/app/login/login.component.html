@@ -1,0 +1,26 @@
+<h1 class="text-center py-5">Connectez-vous pour acceder à votre compte</h1>
+<article class="text-center">
+  <a href="#"><img src="../assets/symbmoncompte.png" alt="symbole mon compte" width="10%" height="10%"></a>
+</article>
+
+
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div class="col-10">
+      <div class="form-group col-sm-6 py-2 b">
+        <input type="text" class="formulaire form-control" id="name" placeholder="Adresse email *" required>
+      </div>
+      <div class="form-group col-sm-7 d-flex py-2">
+        <input type="text" class="formulaire form-control" id="name" placeholder="Mot de passe *" required>
+      </div>
+      <div class="col-10">
+        <button type="submit" class="btngeneral"><a [routerLink]="['/login']">Se connecter</a></button>
+      </div>
+      <button type="submit" id="form-submit" class="btngeneral btn-lg pull-right">Mot de passe oublié ?</button>
+      <hr>
+      <h1 class="text-center py-5">Vous n'avez pas de compte ?</h1>
+      <button type="submit" class="btngeneral btn-lg pull-right"><a [routerLink]="['/register']">Créé votre
+        compte</a></button>
+    </div>
+  </div>
+</div>
