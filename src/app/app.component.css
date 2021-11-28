@@ -1,0 +1,22 @@
+.header {
+  background-image: url("../assets/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 300px;
+  padding-top: 10px;
+}
+
+header nav{
+  display: flex;
+  align-items: flex-end;
+  /**cela n'est pas sur le coté pourquoi?**/
+  justify-content: space-between;
+}
+header nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-weight: bold;
+
+  font-size: 20px;}
