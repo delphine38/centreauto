@@ -6,7 +6,7 @@
     <div class="col">
       <div ngbDropdown class="d-inline-block">
         <!--<button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{marque}}</button>-->
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>marque</button>
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
          <!-- <button ngbDropdownItem (click)='brandHandler("audi")'>Audi</button>
           <button ngbDropdownItem (click)='brandHandler("bmw")'>BMW</button>-->
@@ -99,9 +99,6 @@
     </div>
   </li>
 
-
-
-
   <li>
     <!--<button (click)="resetHandler()" class="btngeneral py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"--->
     <button class="btngeneral py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"
@@ -109,7 +106,6 @@
       reset
     </button>
   </li>
-
 
   <li>
     <!--<button (click)="validateHandeler()" class="btngeneral py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"-->
@@ -122,160 +118,27 @@
 
 
 
-
-
-
-
-
 <div class="container">
-  <div class="d-flex flex-wrap text-center">
-   <!-- <div *ngFor="let annonce of dataVoitures">-->
-      <div class="col-3">
+  <div class="p-1 d-flex flex-wrap text-center">
+    <div *ngFor="let annonce of dataVoitures">
+      <div class="col-1">
         <div class="card" style="width: 18rem">
           <div class="card-body">
-            <img src="assets/fond.jpg" width="40%">
-            <p><strong>Titre </strong> :Audi</p>
-            <p><strong>Description </strong> : lorem20 jm imqjl jojqlj gjqjml jioquojiomjo qjiom quioj </p>
-            <!--
             <img src="{{ annonce.image }}" width="200px">
             <p><strong>Titre : {{ annonce.title }}</strong></p>
-            <p><strong>Description : {{ annonce.description }}</strong></p>
+            <p><strong>Description : {{ annonce.desccription }}</strong></p>
             <p><strong>Année : {{ annonce.year }}</strong></p>
             <p><strong>Kilometrage : {{ annonce.kilometer }} Km</strong></p>
-            <p><strong>id : {{ annonce.brand }}</strong></p>
-            <p><strong>Modele : {{ annonce.model }} €</strong></p>
-            <p><strong>Carburant : {{ annonce.fuel }} €</strong></p>-->
+            <p><strong>Modèle : {{ annonce.brand }}</strong></p>
+            <p><strong>Carburant : {{ annonce.fuel }}</strong></p>
+            <p><strong>Prix : {{ annonce.price }} €</strong></p>
           </div>
-        </div>
-      </div>
-
-    <div class="col-3">
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="assets/fond.jpg" width="40%">
-          <p><strong>Titre </strong> :Audi</p>
-          <p><strong>Description </strong> : lorem20 jm imqjl jojqlj gjqjml jioquojiomjo qjiom quioj </p>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="assets/fond.jpg" width="40%">
-          <p><strong>Titre </strong> :Audi</p>
-          <p><strong>Description </strong> : lorem20 jm imqjl jojqlj gjqjml jioquojiomjo qjiom quioj </p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
-<!--<ul class="selectionmodele d-flex justify-content-center list-unstyled py-3">
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{marque}}</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem (click)='brandHandler("audi")'>Audi</button>
-          <button ngbDropdownItem (click)='brandHandler("bmw")'>BMW</button>
-          <button ngbDropdownItem (click)='brandHandler("mercedes")'>Mercedès</button>
-          <button ngbDropdownItem (click)='brandHandler("peugeot")'>Peugeot</button>
-          <button ngbDropdownItem (click)='brandHandler("renault")'>Renault</button>
-        </div>
-      </div>
-    </div>
-  </li>
-
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Modèle</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>A1</button>
-          <button ngbDropdownItem>A3</button>
-          <button ngbDropdownItem>A5</button>
-          <button ngbDropdownItem>A6</button>
-        </div>
-      </div>
-    </div>
-  </li>
-
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Carburant</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Diesel</button>
-          <button ngbDropdownItem>Electrique</button>
-          <button ngbDropdownItem>Essence</button>
-          <button ngbDropdownItem>Hybride</button>
-        </div>
-      </div>
-    </div>
-  </li>
-
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Année de mise en
-          circulation</button>
-        <!-- <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Prix</button>
-          <button ngbDropdownItem>Prix</button>
-          <button ngbDropdownItem>Prix</button>
-        </div> -->
-        <!--<div id="prixDiv" class="sideClass">
-          <label for="customRange3" class="form-label"></label>
-          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-        </div>
-      </div>
-    </div>
-  </li>
 
 
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Kilométrage</button>-->
-        <!-- <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Prix</button>
-            <button ngbDropdownItem>Prix</button>
-            <button ngbDropdownItem>Prix</button>
-          </div> -->
-      <!--  <div id="prixDiv" class="sideClass">
-          <label for="customRange3" class="form-label"></label>
-          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-        </div>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="col">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Prix</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Prix</button>
-          <button ngbDropdownItem>Prix</button>
-          <button ngbDropdownItem>Prix</button>
-        </div>
-        <div id="prixDiv" class="sideClass">
-          <label for="customRange3" class="form-label"></label>
-          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-        </div>
-      </div>
-    </div>
-  </li>
-  <li>
-    <button (click)="resetHandler()" class="btngeneral py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-      reset
-    </button>
-  </li>
-  <li>
-    <button (click)="validateHandeler()" class="btngeneral py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-      valider
-    </button>
-  </li>
-</ul>-->
